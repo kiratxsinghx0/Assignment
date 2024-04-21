@@ -1,0 +1,125 @@
+    /* Media query for screens smaller than 600px */
+    @media (max-width: 600px) {
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .dog-img {
+        position: absolute;
+        width: 7.9rem;
+        height: 16rem;
+        top: 6%;
+        left: 14.3%;
+        z-index: 1;
+      }
+
+      .overlay {
+        height: 100px;
+        width: 6.9rem;
+        position: absolute;
+        z-index: 2;
+        border-radius: 10.5%;
+        position: absolute;
+        bottom: 40%;
+        left: 23.4%;
+        background-image: var(--background-image)
+      }
+
+      .lbl1 {
+        background-image: linear-gradient(to bottom, #ffc800 40%, #dc0000 0%);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      .lbl2 {
+        background-image: linear-gradient(to bottom, #dc0000 41%, #ffc800 0%);
+        -webkit-background-clip: text;
+        color: transparent;
+        position: absolute;
+        left: -2%;
+        top: -1%;
+      }
+
+      .char-dog {
+        position: relative;
+        display: flex;
+      }
+
+      .dog-container {
+        display: flex;
+        flex-flow: column;
+      }
+
+      label {
+        font-size: 20rem;
+      }
+    }
+
+    /* Media query for screens between 601px and 900px */
+    @media (min-width: 601px) {
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .dog-img {
+        position: absolute;
+        width: 7.9rem;
+        height: 16rem;
+        top: 17%;
+        left: 23.4%;
+        z-index: 1;
+      }
+
+      .overlay {
+        height: 100px;
+        width: 6.9rem;
+        position: absolute;
+        bottom: 41%;
+        left: 29.4%;
+        z-index: 2;
+        border-radius: 10.5%;
+        background-image: var(--background-image)
+      }
+
+      .lbl1 {
+        background-image: linear-gradient(to bottom, #ffc800 40%, #dc0000 0%);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      .lbl2 {
+        background-image: linear-gradient(to bottom, #dc0000 41%, #ffc800 0%);
+        -webkit-background-clip: text;
+        color: transparent;
+        position: absolute;
+        left: -2%;
+        top: -1%;
+      }
+
+      .char-dog {
+        position: relative;
+        display: flex;
+      }
+
+      .dog-container {
+        display: flex;
+        overflow-y: auto;
+      }
+
+      label {
+        font-size: 26rem;
+      }
+    }

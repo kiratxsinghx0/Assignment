@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* styles.scss */
+:root {
+    --background-color: #fff; /* Default background color */
+    --text-color: #333; /* Default text color */
+    --background-image: linear-gradient(to bottom, transparent 45%, #fffffff5 93%);
+}
+
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+ 
+  /* Add more styles using CSS variables as needed */
+  

@@ -1,0 +1,16 @@
+    <div class="tabDiv">
+        <nav mat-tab-nav-bar [tabPanel]="tabPanel" class="tabBar" >
+            <a mat-tab-link routerLink="/my-space" [ngClass]="selectedtabIndex == '1' ? 'active' : ''" (click)="tabChanged('1')" > <mat-icon class="icon">public</mat-icon>My Space</a>
+        <a mat-tab-link routerLink="/home" [ngClass]="selectedtabIndex == '2' ?'active' : ''" (click)="tabChanged('2')" routerLinkActive><mat-icon class="icon">home</mat-icon>Home</a>
+        <a mat-tab-link routerLink="/events" [ngClass]="selectedtabIndex == '3' ? 'active' : ''" (click)="tabChanged('3')" routerLinkActive><mat-icon class="icon">event</mat-icon>Events</a>
+        <a mat-tab-link routerLink="/videos" [ngClass]="selectedtabIndex == '4' ? 'active' : ''" (click)="tabChanged('4')" routerLinkActive><mat-icon class="icon">play_circle_filled</mat-icon>Videos</a>
+        <a mat-tab-link routerLink="/live" [ngClass]="selectedtabIndex == '5' ?'active' : ''" (click)="tabChanged('5')" routerLinkActive><mat-icon class="icon">live_tv</mat-icon>Live</a>
+        <a mat-tab-link routerLink="/register" [ngClass]="selectedtabIndex == '6' ? 'active' : ''" (click)="tabChanged('6')" routerLinkActive> <mat-icon class="icon">person_add</mat-icon>Register</a>
+       </nav>
+</div>
+<div class="toggle_btn" >
+    <label class="switch">
+            <input type="checkbox" id="toggleSwtich">
+            <span class="slider" (click)="onSubmit()"></span>
+      </label>
+</div>
